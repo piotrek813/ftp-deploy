@@ -1,0 +1,17 @@
+{
+  "name": "@chvrchbvrner26/ftp-deploy",
+  "version": "1.0.0",
+  "description": "This package allow to quickly create basic .circleci config and send files from local dir to remote ftp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "basic-ftp": "^4.6.3",
+    "dotenv": "^8.2.0",
+    "meow": "^8.0.0"
+  },
+  "bin": "index.js"
+}
