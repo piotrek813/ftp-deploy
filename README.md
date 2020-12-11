@@ -6,9 +6,9 @@
 
 ### Install
 
-`npm i`
+`npm i @chvrchbvrner26/ftp-deploy`
 
-`yarn add`
+`yarn add @chvrchbvrner26/ftp-deploy`
 
 ### In order this to work you need to create few enviromental variables:
 

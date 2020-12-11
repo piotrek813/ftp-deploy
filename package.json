@@ -6,8 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrek813/ftp-deploy.git"
+  },
+  "author": {
+    "name": "Piotrek Smoliński",
+    "email": "piotreksmolinski04@gmail.com",
+    "url": "https://github.com/piotrek813/"
+  },
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotrek813/ftp-deploy/issues"
+  },
+  "homepage": "https://github.com/piotrek813/ftp-deploy#readme",
   "dependencies": {
     "basic-ftp": "^4.6.3",
     "dotenv": "^8.2.0",
