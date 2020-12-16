@@ -22,7 +22,7 @@ const createCircleciConfig = (packageManager) => (
 			  command: ${packageManager === 'yarn' ? 'yarn' : 'npm run'} build
 		  - run:
 			  name: deploy
-			  command: deploy-ftp
+			  command: npx deploy-ftp
 `)
 
 
@@ -37,8 +37,6 @@ const cli = meow(`
 	Examples
 		$ deploy --addConfig --useNpm
 		$ deploy
-
-	${process.cwd()}
 `, {
 	flags: {
 		addConfig: {
