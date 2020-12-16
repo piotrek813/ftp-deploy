@@ -6,23 +6,23 @@ const { dirname } = require('path');
 const deploy = require('./deploy')
 
 const createCircleciConfig = (packageManager) => (
-	`version: 2
-	jobs:
-	  build:
-		docker:
-		  - image: circleci/node:10
-		working_directory: ~/gatsby-site
-		steps:
-		  - checkout
-		  - run:
-			  name: Install Dependencies
-			  command: ${packageManager === 'yarn' ? 'yarn' : 'npm i'}
-		  - run:
-			  name: Gatsby Build
-			  command: ${packageManager === 'yarn' ? 'yarn' : 'npm run'} build
-		  - run:
-			  name: deploy
-			  command: npx deploy-ftp
+`version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/gatsby-site
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: ${packageManager === 'yarn' ? 'yarn' : 'npm i'}
+      - run:
+          name: Gatsby Build
+          command: ${packageManager === 'yarn' ? 'yarn' : 'npm run'} build
+      - run:
+          name: deploy
+          command: npx deploy-ftp
 `)
 
 
